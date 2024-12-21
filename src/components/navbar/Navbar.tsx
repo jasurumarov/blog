@@ -1,11 +1,12 @@
 "use client"
 
+import { useState } from "react";
+import { navItems } from "@/config/constants";
 import { AppBar, Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material"
+// Icons
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import AdjustIcon from '@mui/icons-material/Adjust';
-import { useState } from "react";
-import { navItems } from "@/config/constants";
 
 interface Props {
     window?: () => Window;
@@ -44,7 +45,7 @@ const Navbar = ({ window }: Props) => {
 
     return (
         <Box height={'10vh'} sx={{ display: 'flex' }}>
-            <AppBar component="nav">
+            <AppBar sx={{ height: '10vh', backgroundColor: '#141414' }} component="nav">
                 <Toolbar>
                     <IconButton
                         color="inherit"

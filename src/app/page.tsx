@@ -1,7 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next';
-import { Button } from '@mui/material';
 import Layout from '@/layout/layout';
+import { Hero } from '@/components';
 
 export const metadata: Metadata = {
   title: "JasurCoder - Home",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const Home = () => {
   return (
     <Layout>
-      <Button>Click</Button>
+      <Hero />
     </Layout>
   )
 }
