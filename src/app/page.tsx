@@ -1,7 +1,8 @@
 import React from 'react'
 import { Metadata } from 'next';
 import Layout from '@/layout/layout';
-import { Hero } from '@/components';
+import { Content, Hero, Sidebar } from '@/components';
+import { Box } from '@mui/material';
 
 export const metadata: Metadata = {
   title: "JasurCoder - Home",
@@ -12,6 +13,10 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
+      <Box sx={{ display: 'flex', gap: '20px', padding: '20px' }}>
+        <Sidebar />
+        <Content />
+      </Box>
     </Layout>
   )
 }
